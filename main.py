@@ -22,14 +22,14 @@ import pynter
 import pygame
 
 
-def playsound( filename):
+def playsound(filename):
     pygame.mixer.init()
     pygame.mixer.music.load(filename)
     pygame.mixer.music.play()
     while pygame.mixer.music.get_busy() == True:
         continue
 
-ok=True
+Ok = True
 
 try:
     camera = WebcamPymientoCamera()
@@ -40,9 +40,9 @@ try:
     mask = perfcard.getcalculednumberfromholes()
 
 except PymientoNoBlobsException as e:
-    print(" Error: {0}", e)
+    print(" Error: {0}".format(e.message))
     mask = '0000000000000000000000000'
-    Ok=False
+    Ok = False
 if Ok:
     playsound('electronicping.wav')
 salida = pynter.pinta_cuadro(mask)
