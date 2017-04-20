@@ -30,6 +30,9 @@ class PymientoCamera:
     def generaterandomname(self, len=6):
         return ''.join(random.choice(ascii_uppercase) for _ in range(len))
 
+    @abstractmethod
+    def release(self):  pass
+
 pass
 
 
@@ -56,4 +59,18 @@ class WebcamPymientoCamera(PymientoCamera):
 
     def release(self):
         self.camera.release()
+pass
+
+
+class FakeCamPymientoCamera(PymientoCamera):
+    filename=None
+
+    def __init__(self,filename):
+        self.filename=filename
+
+    def tomarfoto(self,filename_prefix):
+        return self.filename
+
+    def release(self):
+        return
 pass

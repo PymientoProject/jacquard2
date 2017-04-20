@@ -15,7 +15,7 @@ Version 2.0.0.20170419
 '''
 
 
-from PymientoCamera import WebcamPymientoCamera
+from PymientoCamera import WebcamPymientoCamera,FakeCamPymientoCamera
 from PerforedCard import PerforedCard
 from PymientoExceptions import PymientoNoBlobsException
 import pynter
@@ -32,7 +32,7 @@ def playsound(filename):
 Ok = True
 
 try:
-    camera = WebcamPymientoCamera()
+    camera = FakeCamPymientoCamera('temp.jpg')
 
     capture = camera.tomarfoto('pymiento')
     camera.release()
