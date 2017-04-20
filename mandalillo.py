@@ -140,6 +140,6 @@ if __name__ == "__main__":
         salida.save("salida.png")
 
     else:
-        print "Uso: mandalillo.py <STRING>"
-        print "Donde <STRING> deben cuarenta unos y ceros"
-        print "Ejemplo: mandalillo.py 0000100110011101011101000010010010110100"
+        print("Uso: mandalillo.py <STRING>")
+        print( "Donde <STRING> deben cuarenta unos y ceros")
+        print( "Ejemplo: mandalillo.py 0000100110011101011101000010010010110100")

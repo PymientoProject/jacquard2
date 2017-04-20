@@ -18,7 +18,6 @@ from abc import ABCMeta,abstractmethod
 from string import ascii_uppercase
 import random
 import cv2
-import cv
 
 
 class PymientoCamera:

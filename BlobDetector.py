@@ -44,7 +44,7 @@ class PymientoBlobDetector:
         imgresized = cv2.resize(image,dsize=(0,0),fx=0.33,fy=0.33)
         #imcroped= imgresized[320:50, 480:500]
         # Detectamos las formas
-        detector = cv2.SimpleBlobDetector()
+        detector = cv2.SimpleBlobDetector_create()
 
         keypoints = detector.detect(imgresized)
 

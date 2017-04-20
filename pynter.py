@@ -38,19 +38,20 @@ def pinta_cuadro(cadena_de_bits):
         raise ValueError('se esperaban 25 digitos binarios')
 
 
-if __name__ == "__main__":
+#if __name__ == "__main__":
 
 
-	print """
-	pynter.py genera una imagen basándose en una cadena conteniendo una sucesión arbitraria de 25 unos y ceros. Cada cadena concreta tiene su propia imagen única.
+#	print '''
+#	pynter.py genera una imagen basándose en una cadena conteniendo una sucesión arbitraria de 25 unos y ceros. Cada cadena concreta tiene su propia imagen única.
 
-	pynter.py está ideado para ser usado como módulo en otros programas de este modo:
+#	pynter.py está ideado para ser usado como módulo en otros programas de este modo:
 
-		import pynter
+#		import pynter
 
-		cadena = "0000100110011101011101000"
+#		cadena = "0000100110011101011101000"
 
-		salida = pynter.pinta_cuadro(cadena)
+#		salida = pynter.pinta_cuadro(cadena)
 
-		salida.save("cuadro.png")
-	"""
+#		salida.save("cuadro.png")
+	
+#

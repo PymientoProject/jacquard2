@@ -17,9 +17,10 @@
 #       along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-import hashlib, ImageDraw
-import Image, ImageFont
+import hashlib
 
+from PIL import ImageDraw
+from PIL import Image, ImageFont
 Iterations= 4
 Gallery= 20
 
@@ -105,7 +106,7 @@ def Division(corta,larga,division):
     """Calcula el punto que coresponde a 'división' décimas partes entre 'corta' y 'larga' """
 
     if division == 0:
-	division = 10
+        division = 10
         #resultado= larga
 
     #else:
