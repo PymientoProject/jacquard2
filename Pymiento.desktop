@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Pymiento
+Comment=
+Exec=sudo python /home/pi/Pymiento/detectorTarjeta.py
+SartupNotify=false
+Terminal=true
+Hidden=false
+X-KeepTerminal=true
+StartupNotify=true
