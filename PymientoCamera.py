@@ -16,6 +16,8 @@ Version 2.0.0.20170419
 
 from abc import ABCMeta,abstractmethod
 from string import ascii_uppercase
+# Solo para Raspberry Pi import picamera
+from PIL import Image
 import random
 import cv2
 import cv
@@ -74,3 +76,28 @@ class FakeCamPymientoCamera(PymientoCamera):
     def release(self):
         return
 pass
+
+'''
+Descomentar esta clase en Raspberry Pi
+class PiCameraPymientoCamera(PymientoCamera):
+        resolucion=(2592,1944)
+        brillo=50
+        modoExposicion = 'auto'
+
+    def tomarfoto(self, filename_prefix):
+        with picamera.PiCamera() as picam:
+
+            picam.resolution = self.resolucion
+            picam.brightness = self.brillo
+            picam.exposure_mode = self.modoExposicion
+            filename=filename_prefix+self.generaterandomname()+'.jpg'
+            picam.capture(filename)
+        return Image(filename)
+
+
+    def release(self):
+
+        return
+
+pass
+'''

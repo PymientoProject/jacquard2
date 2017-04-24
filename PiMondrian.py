@@ -15,10 +15,12 @@
 #
 #       You should have received a copy of the GNU General Public License
 #       along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Ported to Python3 using Pillow By Victor Suarez ( Zerasul@gmail.com)
 
+import hashlib
+from PIL import ImageDraw, Image
 
-import hashlib, ImageDraw
-import Image, ImageFont
 
 Iterations= 4
 Gallery= 20
