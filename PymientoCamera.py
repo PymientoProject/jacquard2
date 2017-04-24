@@ -20,7 +20,6 @@ from string import ascii_uppercase
 from PIL import Image
 import random
 import cv2
-import cv
 
 
 class PymientoCamera:
