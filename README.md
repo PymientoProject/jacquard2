@@ -1,5 +1,5 @@
 # jacquard2
-jacquard version 2.0 OpenCV
+jacquard version 2.0 OpenCV. Mejora realizada por Victor Suarez.
 
 Versión 2 del programa Jacquard2 el cual permite a partir de una tarjeta perforada generar unas imagenes. En esta nueva versión se ha modificado la detección delos agujeros de la librería Simple CV por Opencv.
 Ademas se ha hecho una refactorización del código para que sea más legible.
