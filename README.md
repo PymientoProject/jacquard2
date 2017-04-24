@@ -41,6 +41,19 @@ fichero.
 * _PiCameraPymientoCamera_: Clase que implementa la camara de la Raspberry Pi. **NOTA**: Esta clase viene comentada;
 descomentar tanto la clase como el import para usar en Raspberry Pi.
 
+Para cambiar la clase a utilizar, cambiarlo en el fichero _main.py_ en la linea 33:
+
+```python
+camera = FakeCamPymientoCamera('tarjeta2.jpg')
+```
+
+Asignando el objeto camera a la correspondiente clase;(Nota: la clase debe heredar de _PymientoCamera_.
+
+ejemplo:
+
+```python
+camera=PiCameraPymientoCamera()
+```
 
 ## Compatibilidad con Python3 y opencv3.
 
